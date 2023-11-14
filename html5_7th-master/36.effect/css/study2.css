@@ -1,0 +1,100 @@
+*{margin:0;padding:0;}
+ul,ol{list-style: none;}
+i,em{font-style: inherit;}
+
+/*
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* common */
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+h1,h2,h3{
+    font-family: 'Bebas Neue', sans-serif;
+}
+.tit1{text-transform: uppercase;}
+
+.intro{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.text h1{
+    font-size:3rem;
+    line-height: 1;
+}
+.text h1>b{
+    font-size:2em;
+}
+.text>p{
+    text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slideLtoR{
+    0%{
+        opacity: 0;
+        transform:translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0%);
+    }
+}
+@keyframes slideBtoT {
+    0%{
+        opacity: 0;
+        transform:translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0%);
+    }
+}
+@keyframes scaleUtoD {
+    0%{
+        opacity: 0;
+        transform:scale(3);
+    }
+    100%{
+        opacity: 1;
+        transform:scale(1);
+    }
+}
+
+.pp{width:300px;}
+
+.profile{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile .text{
+    width:50%;
+}
+.profile .text h1{
+    margin-bottom: 20px;
+}
+.buttonChar{
+    width:200px;
+    height:200px;
+    margin:0 auto;
+    margin-bottom:50px;
+    border:1px dashed black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
