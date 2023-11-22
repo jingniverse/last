@@ -1,3 +1,17 @@
 @font-face {
     font-family: 'Caveat', cursive;
 }
+@font-face {
+    font-family: 'kcc';
+    src: url(../font/KCCDodamdodam\(Windows용\).ttf);
+}
+@font-face {
+    font-family: 'imh';
+    src: url(../font/IM_Hyemin-Regular.ttf);
+
+}
+@font-face {
+    font-family: 'imh';
+    src: url(../font/IM_Hyemin-Bold.ttf);
+    font-weight: bold;
+}
