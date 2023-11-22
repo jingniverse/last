@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/reset.css">
@@ -14,9 +14,14 @@
     <script src="./js/main.js"></script>
 </head>
 <body>
-    <div>
+    <div class="wrap">
+        <!-- header start -->
         <header class="header">
-            <h1 class="logo"><a href="#"><img src="./img/logo.png" alt="포트폴리오 개인 로고YH"></a></h1>
+            <h1 class="logo">
+                <a href="#">
+                    <img src="./img/logo.png" alt="포트폴리오 개인 로고YH">
+                </a>
+            </h1>
             <nav>
                 <ul>
                     <li><a href="#">home</a></li>
@@ -26,13 +31,145 @@
                     <li><a href="#">contact</a></li>
                 </ul>
             </nav>
+            <div class="bin"></div>
             <div class="icon nav-icon-5">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </header>
-        <main></main>
+        <!-- header end -->
+        <!-- main start -->
+        <main>
+            <!-- home -->
+            <section id="home" class="page1">
+                <h1>intro</h1>
+                <h2>Let me show you<br>
+                    My portfolio</h2>
+                <div>
+                    <p>
+                        <span>2023 YEONG HWAN</span>
+                        <span>WEB Publisher</span>
+                    </p>
+                </div>
+            </section>
+            <!-- home end -->
+            <!-- about start -->
+            <section id="about" class="page2">
+                <h1>about</h1>
+                <div class="my">
+                    <div class="sentence">
+                        <p>Life is a Matter of<br> 
+                            Direction not Speed</p>
+                        <span>삶은 신속한 달음보다 어디로 향하는지에 그 가치가 있다.<br>
+                            목표한 방향으로 끈질기게 나아가, 인생을 의미 있게 만드는 사람이 되겠습니다</span>
+                    </div>
+                    <div class="my_img">
+                        <img src="./img/profile my.png" alt="profile img">
+                    </div>
+                    <div class="my_info">
+                        <ul class="my_info_1">
+                            <li>
+                                <p>name</p>
+                                <p>김영환</p>
+                            </li>
+                            <li>
+                                <p>birth</p>
+                                <p>92.12.23</p>
+                            </li>
+                            <li>
+                                <p>e-mail</p>
+                                <p>jingblisher@gmail.com</p>
+                            </li>
+                            <li>
+                                <p>Certificate</p>
+                                <p>
+                                    <span>운전면허 1종 보통</span>
+                                    <span>사회복지사 1급,2급</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="my_info_2">
+                            <li>
+                                <p>Education</p>
+                                <p>
+                                    <span>2023.07 ~ 2023.12</span>
+                                    <span>UI/UX 반응형 웹 디자인 &퍼블리셔 양성과정</span>
+                                    <span>2020.02</span>
+                                    <span>여주대학교 사회복지학과 졸업</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Experience</p>
+                                <p>
+                                    <span>2022.11 ~2023.4</span>
+                                    <span>함께재가노인복지센터 사회복지사</span>
+                                    <span>2020.09 ~2021.2</span>
+                                    <span>여주대학교 원격수업 코디네이터</span>
+                                </p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="skill_box">
+                        <p>skill</p>
+                        <ul class="skill">
+                            <li><img src="./img/skill/ps_appicon 1.png" alt="포토샵"></li>
+                            <li><img src="./img/skill/illustrator 1.png" alt="일러스트"></li>
+                            <li><img src="./img/skill/jq 1.png" alt="제이쿼리"></li>
+                            <li><img src="./img/skill/js 1.png" alt="자바스크립트"></li>
+                            <li><img src="./img/skill/html.png" alt="에이치티엠엘"></li>
+                            <li><img src="./img/skill/css.png" alt="css"></li>
+                            <li><img src="./img/skill/visual-studio-code-1 1.png" alt="비주얼스튜디오코드"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- about end -->
+            <!-- webpublishing start -->
+            <section id="Publishing" class="page3">
+                <div class="pb_title">
+                    <p>Responsive Web</p>
+                    <h1>Redesign Project</h1>
+                </div>
+                <!-- 슬라이드 만들기js넣기전에 -->
+                <div class="pb_content">
+                    <div class="publishing_img">
+                        <img src="./img/redesigndonga (2).png" alt="리디자인사이트">
+                    </div>
+                    <div class="pb_text">
+                        <p>
+                            트랜드가 지난 사용감과 디자인  UI/UX를 사용하던<br>  
+                            동아제약 사이트를 리디자인하였습니다.
+                        </p>
+                        <p>
+                            동아제약의 메인컬러와 흰색을 사용하였고<br>
+                            미디어 쿼리를 이용한 반응형 사이트로 제작하였습니다.
+                        </p>
+                        <p>동아제약</p>
+                        <ul>
+                            <li><span>page</span><span>Main</span></li>
+                            <li><span>tool</span><span>HTML, CSS, JAVASCRIPT</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="btn_box">
+                    <li class="plan">
+                        <a href="#"><p>plan</p></a>
+                    </li>
+                    <li class="before">
+                        <a href="#"><p>before</p></a>
+                    </li>
+                    <li class="redesign_site">
+                        <a href="#"><p>go redesign site</p></a>
+                    </li>
+                </ul>
+                <!-- 슬라이드 만들기js넣기전에 -->
+
+            </section>
+            <!-- webpublishing end -->
+        </main>
+        <!-- main end -->
     </div>
 </body>
 </html>
