@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/reset.css">
@@ -24,14 +24,14 @@
             </h1>
             <nav>
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">publishing</a></li>
-                    <li><a href="#">design</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#publishing">publishing</a></li>
+                    <li><a href="#design">design</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
-            <div class="bin"></div>
+            <!-- <div class="bin"></div> -->
             <div class="icon nav-icon-5">
                 <span></span>
                 <span></span>
@@ -132,42 +132,186 @@
                     <p>Responsive Web</p>
                     <h1>Redesign Project</h1>
                 </div>
-                <!-- 슬라이드 만들기js넣기전에 -->
-                <div class="pb_content">
-                    <div class="publishing_img">
-                        <img src="./img/redesigndonga (2).png" alt="리디자인사이트">
+                <div class="station">
+                    <ul class="train">
+                        <li>
+                            <div class="pb_content">
+                                <div class="publishing_img">
+                                    <img src="./img/Mockup.png" alt="리디자인사이트">
+                                </div>
+                                <div class="pb_text">
+                                    <p>
+                                        트랜드가 지난 사용감과 디자인  UI/UX를 사용하던<br>  
+                                        동아제약 사이트를 리디자인하였습니다.
+                                    </p>
+                                    <p>
+                                        동아제약의 메인컬러와 흰색을 사용하였고<br>
+                                        미디어 쿼리를 이용한 반응형 사이트로 제작하였습니다.
+                                    </p>
+                                    <p>동아제약</p>
+                                    <ul>
+                                        <li><span>page</span><span>Main</span></li>
+                                        <li><span>tool</span><span>HTML, CSS, JAVASCRIPT</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="btn_box">
+                                <li class="plan">
+                                    <a href="#"><p>plan</p></a>
+                                </li>
+                                <li class="before">
+                                    <a href="#"><p>before</p></a>
+                                </li>
+                                <li class="redesign_site">
+                                    <a href="#"><p>go redesign site</p></a>
+                                </li>
+                            </ul>  
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- webpublishing end -->
+            <!-- webdesign start -->
+            <section id="design" class="page4">
+                <div class="d_popup">
+                    <h1 class="des_title">de<i>s</i>ign</h1>
+                    <p>깔끔한 디자인을  벤치마킹 하여<br>  
+                        팝업과 배너를 제작하였습니다</p>
+                    <div>    
+                        <p class="pu_title">Popup</p>
+                        <p class="size">500x500 pixels</p>
                     </div>
-                    <div class="pb_text">
-                        <p>
-                            트랜드가 지난 사용감과 디자인  UI/UX를 사용하던<br>  
-                            동아제약 사이트를 리디자인하였습니다.
-                        </p>
-                        <p>
-                            동아제약의 메인컬러와 흰색을 사용하였고<br>
-                            미디어 쿼리를 이용한 반응형 사이트로 제작하였습니다.
-                        </p>
-                        <p>동아제약</p>
-                        <ul>
-                            <li><span>page</span><span>Main</span></li>
-                            <li><span>tool</span><span>HTML, CSS, JAVASCRIPT</span></li>
+                    <div>
+                        <ul class="train2">
+                            <li>
+                                <div class="card">
+                                    <div class="wrapper">
+                                        <img src="./img/popup/firemock.png" class="cover-image" />
+                                    </div>
+                                    <div class="card_info">
+                                        <p>firefighter</p>
+                                        <p>폰트 <span>kanit</span></p>
+                                        <p class="color_box ff">색 
+                                            <span class="co_1"></span><span class="co_2"></span><span class="co_3"></span>
+                                        </p>
+                                    </div>
+                                    <img src="./img/popup/firepop.png" class="character" />
+                                </div>
+                            </li>
+                            <li>
+                                  <div class="card">
+                                    <div class="wrapper">
+                                        <img src="./img/popup/11stmock.png" class="cover-image" />
+                                    </div>
+                                    <div class="card_info">
+                                        <p>11번가</p>
+                                        <p>폰트 <span>G마켓 산스 TTF</span></p>
+                                        <p class="color_box st11">색 
+                                            <span class="co_1">g</span><span class="co_2">g</span><span class="co_3">g</span>
+                                        </p>
+                                    </div>
+                                    <img src="./img/popup/11st.png" class="character" />
+                                </div>
+                            </li>
+                            <li>
+                                  <div class="card">
+                                    <div class="wrapper">
+                                        <img src="./img/popup/nodammock.jpg" class="cover-image" />
+                                    </div>
+                                    <div class="card_info">
+                                        <p>노담</p>
+                                        <p>폰트 <span>고딕아니고 고딩, 어비서현</span></p>
+                                        <p class="color_box nodam">색 
+                                            <span class="co_1"></span><span class="co_2"></span><span class="co_3"></span>
+                                        </p>
+                                    </div>
+                                    <img src="./img/popup/nodampop.png" class="character" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <div class="wrapper">
+                                        <img src="./img/popup/arsmock.jpg" class="cover-image" />
+                                    </div>
+                                    <div class="card_info">
+                                        <p>arsenal FC</p>
+                                        <p>폰트 <span>kanit</span></p>
+                                        <p class="color_box ars">색 
+                                            <span class="co_1"></span><span class="co_2"></span><span class="co_3"></span>
+                                        </p>
+                                    </div>
+                                    <img src="./img/popup/Arsenalpop.png" class="character" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <div class="wrapper">
+                                        <img src="./img/popup/newyearmock2.png" class="cover-image" />
+                                    </div>
+                                    <div class="card_info">
+                                        <p>근하신년</p>
+                                        <p>폰트 <span>Adobe 명조 Std M</span></p>
+                                        <p class="color_box newy">색 
+                                            <span class="co_1"></span><span class="co_2"></span>
+                                        </p>
+                                    </div>
+                                    <img src="./img/popup/newyear2.png" class="character" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <div class="wrapper">
+                                        <img src="./img/popup/blackfridaymock.jpg" class="cover-image" />
+                                    </div>
+                                    <div class="card_info">
+                                        <p>balck friday</p>
+                                        <p>폰트 <span>Kanit</span></p>
+                                        <p class="color_box bf">색 
+                                            <span class="co_1"></span><span class="co_2"></span><span class="co_3"></span>
+                                        </p>
+                                    </div>
+                                    <img src="./img/popup/blackpop.png" class="character" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <div class="wrapper">
+                                        <img src="./img/popup/newyearmock.png" class="cover-image" />
+                                    </div>
+                                    <div class="card_info">
+                                        <p>신년</p>
+                                        <p>폰트 <span>Adobe 명조 Std M</span></p>
+                                        <p class="color_box newy2">색 
+                                            <span class="co_1"></span><span class="co_2"></span><span class="co_3"></span>
+                                        </p>
+                                    </div>
+                                    <img src="./img/popup/newyear.png" class="character" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <div class="wrapper">
+                                        <img src="./img/popup/pepsimock.png" class="cover-image" />
+                                    </div>
+                                    <div class="card_info">
+                                        <p>pepsi</p>
+                                        <p>폰트 <span>kanit</span></p>
+                                        <p class="color_box pep">색 
+                                            <span class="co_1"></span><span class="co_2"></span><span class="co_3"></span>
+                                        </p>
+                                    </div>
+                                    <img src="./img/popup/pepsipop.png" class="character" />
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <ul class="btn_box">
-                    <li class="plan">
-                        <a href="#"><p>plan</p></a>
-                    </li>
-                    <li class="before">
-                        <a href="#"><p>before</p></a>
-                    </li>
-                    <li class="redesign_site">
-                        <a href="#"><p>go redesign site</p></a>
-                    </li>
-                </ul>
-                <!-- 슬라이드 만들기js넣기전에 -->
-
+            </setion>
+            <section id="contact" class="page5">
+                <h1>Contact</h1>
+                <p class="e-mail"><a href="#">jingblisher@gmail.com</a></p>
+                <p>메일을 보내주시면 확인 후 최대한 빠르게 회신 드리겠습니다.</p>
             </section>
-            <!-- webpublishing end -->
         </main>
         <!-- main end -->
     </div>
