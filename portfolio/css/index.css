@@ -1,4 +1,17 @@
 /* 헤더 */
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+  background: #FE5D58;
+  border-radius: 5px;
+
+}
+body::-webkit-scrollbar-track {
+  background: gray;
+
+}
+
 .header{
     width: 690px;
     height: 60px;
@@ -104,7 +117,7 @@ section{
 /* 메인 */
 /* home */
 .page1{
-  padding: 300px 0 130px 200px;
+  padding: 250px 0 130px 250px;
   font-family: caveat;
   font-weight: bold;
   display: flex;
@@ -115,6 +128,7 @@ section{
 .page1 h2{
   font-size: 150px;
   width: 850px;
+  /* margin-bottom: 230px; */
 }
 .page1 div{
   display: flex;
@@ -123,7 +137,7 @@ section{
 .page1 p{
   box-sizing: border-box;
   font-size: 25px;
-  width: 50%;
+  width: 770px;
   padding: 0 85px 8px 5px;
   display: flex;
   justify-content:space-between;
@@ -131,8 +145,9 @@ section{
   border-bottom: 1px solid black;
 }
 .page1 p span{
+  display: block;
 letter-spacing: 10px;
-width: 333px
+width: 350px
 }
 .page1 p span:nth-of-type(2){
   color: #FE5D58;
@@ -241,7 +256,9 @@ height: 100%;
 .my_info_2 span:last-of-type{
   margin-bottom: 0;
 }
-
+.my_info_2 span>br{
+  display: none;
+}
 /* 인포스킬 */
 .skill_box p{
   font-family: caveat;
@@ -386,13 +403,15 @@ height: 100%;
 /* 팝업배치 */
 .page4{
   font-family: caveat;
+  height: 100%;
+  padding-bottom: 150px;
 }
 .d_popup{
   background: #EDF1F3;
-  height: 200vh;
   width: 100%;
   padding: 110px 270px 0;
   box-sizing: border-box;
+  margin-bottom: 200px;
 }
 .des_title{
   text-transform: capitalize;
@@ -455,6 +474,11 @@ color: #FE5D58;
   justify-content: center;
   align-items: flex-end;
   perspective:1800px;
+}
+.card.banner{
+  width: 600px;
+  perspective:1500px;
+
 }
 
 .cover-image {
@@ -599,9 +623,57 @@ color: #FE5D58;
   opacity: 1;
   transform: translate3d(0%, -30%, 100px);
 }
+.banner.card:hover .character {
+  border: 3px solid silver;
+  transform: translate3d(0%, -50%, 100px);
+
+}
+
+/* 팝업끝 */
+/* 배너 */
+.d_banner{
+
+}
+.d_banner>div{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.train3{
+display: flex;
+flex-flow: row wrap;
+width: 1370px;
+justify-content: space-around;
+}
+.train3 li:nth-of-type(2n){
+  margin-right: 0;
+  margin-bottom: 70px;
+}
+.train3 li:last-of-type{
+  margin: 0;
+}
+/* 배너 개인색 */
+.banner .cm .co_1{ background: #A80D35;}
+.banner .cm .co_2{ background: #FFF1DC;}
+.banner .cm .co_3{ background: #F8E2D5;}
+
+.banner .bf .co_1{ background: #FED402;}
+.banner .bf .co_2{ background: #D9B500;}
+.banner .bf .co_3{ background: black;}
+
+.banner .da .co_1{ background: #00ACCD;}
+.banner .da .co_2{ background: white;}
+
+.banner .gama .co_1{ background: #00ACCD;}
+.banner .gama .co_2{ background: #F3F3F3;}
+.banner .gama .co_3{ background: black;}
+/* 배너 개인색 끝*/
+/* 배너끝 */
+/* 컨텍트 */
 .page5{
   font-family: king;
-  font-size: 25px;
+  font-size: 23px;
   padding: 170px 480px;
   display: flex;
   flex-flow: column;
@@ -613,6 +685,11 @@ color: #FE5D58;
   font-weight: bold;
   font-family: caveat;
 }
+.page5 h1,.e-mail,.page5 p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .e-mail{
   font-size: 60px;
   transition: 0.3s all;
@@ -622,5 +699,6 @@ color: #FE5D58;
   color: #FE5D58;
 }
 .page5 p{
+  width: 100%;
   letter-spacing: 10px;
 }
