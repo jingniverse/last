@@ -142,6 +142,9 @@ width: 333px
 /* about */
 .page2{
   padding: 165px 175px 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .page2 h1{display: none;}
 
