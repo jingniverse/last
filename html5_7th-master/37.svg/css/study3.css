@@ -1,0 +1,15 @@
+*{margin:0;padding:0;}
+
+.intro{
+    border:1px solid red;
+}
+.intro path{
+    fill:transparent;
+    stroke: black;
+    stroke-width: 5;
+    /* transition:width 1s ease 0s,height 2s ease 0s; */
+}
+.intro.on path{
+    stroke-dashoffset: 0!important;
+    fill:black;
+}
