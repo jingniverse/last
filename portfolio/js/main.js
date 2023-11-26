@@ -8,5 +8,11 @@ icons.forEach (icon => {
   });
 });
 
+ $('.plan').click(function(){
+    $('.plan_popup').addClass('on')
+ })
+ $('.close').click(function(){
+  $('.plan_popup').removeClass('on')
+})
 
 })

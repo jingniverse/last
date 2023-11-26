@@ -11,7 +11,6 @@ body::-webkit-scrollbar-track {
   background: gray;
 
 }
-
 .header{
     width: 690px;
     height: 60px;
@@ -701,4 +700,57 @@ justify-content: space-around;
 .page5 p{
   width: 100%;
   letter-spacing: 10px;
+}
+/* 플랜 팝업창 */
+.plan_popup{
+  z-index: 2;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+}
+.plan_popup.on{
+  opacity: 1;
+  pointer-events: all;
+}
+
+.dongainfo_popup{
+  position: relative;
+  width: 70%;
+  height: 70%;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.dongainfo_popup>div{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+}
+.dongainfo_popup div img{
+  width: 100%;
+}
+.close{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  font-family: king;
+  text-transform: uppercase;
+  height: 30px;
+  z-index: 4;
+  top: -40px;
+  right: 0;
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: white;
+  background: #00ACCD;
+  border: white;
+  cursor: pointer;
 }
