@@ -32,11 +32,11 @@
     .page2{
         overflow: hidden;
         align-items: flex-end;
-        padding: 100px 0 50px;
+        padding: 100px 10px 100px;
     }
     .sentence{
         width: 330px;
-        top:0;
+        top:-35px;
         transform: translateY(-40%);
         font-size: 45px;
     }
@@ -45,21 +45,20 @@
     padding: 0;
 }
     .my{
+        width: 760px;
         align-items: flex-end;
-        justify-content: flex-start;
+        justify-content: space-between;
         flex-flow: row wrap;
     }
     
     .my_img{
         border-radius: 20px;
-      width: 400px;
-      height: 400px;
-        
+      height: 350px;
+        width: 45%;
     }
     .my_info{
         padding: 0;
-        padding-left: 50px;
-        width:30% ;
+        width:45% ;
     }
     .my_info ul li p:nth-of-type(1){
         font-size: 20px;
@@ -128,7 +127,7 @@
     /* 퍼블리싱 */
     .page3{
         overflow: hidden;
-        padding: 0;
+        padding: 10px;
     }
     .pb_title h1{
       font-size: 60px;
@@ -137,7 +136,7 @@
     font-size: 17px;
     }
     .publishing_img img{
-    width: 450px;
+    width: 430px;
     height: 230px;
     }
     .pb_content{
@@ -148,7 +147,7 @@
         padding: 0;
         width: 36%;
         padding-left: 20px;
-        font-size: 13px;
+        font-size: 12.5px;
     }
     .pb_text p:nth-of-type(3){
     font-size: 23px;
@@ -167,7 +166,8 @@
     /* 퍼블리싱 끝 */
     /* 디자인 */
     .page4{
-        padding-bottom: 0;
+        overflow: hidden;
+        padding-top: 100px;
     }
     /* 팝업 */
 
@@ -176,6 +176,12 @@
         padding: 0;
         overflow: hidden;
         margin-bottom: 0;
+    }
+    .d_banner{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
     }
     .des_title{
         font-size: 60px;
@@ -192,11 +198,14 @@
         width: 100px;
         font-size: 15px;
     }
+    .size.pop{margin-bottom: 0;}
+
      div.station2{
+        overflow: hidden;
         position: relative;
         display: flex;
         flex-flow: row nowrap;
-        height: 700px;
+        height: 800px;
         width: 700px;
         box-sizing: border-box;
     }   
@@ -204,36 +213,54 @@
     transition: transform 1s ease;
         display: flex;
         width: 1400px;
+        justify-content: center;
         flex-flow: column wrap;
         box-sizing: border-box;
     }
     .controler2,.controler3{
         position:absolute;
-        width:100%;
+        width:95%;
         left:50%;
         top:50%;
         transform:translate(-50%,-50%);
         display: flex;
         font-size: 70px;
+        transition: 0.5s all ease 0s;
         justify-content: space-between;
     }
     .train2>li{
         margin: 0;
         padding: 50px;
        }
+    .train2>li:nth-of-type(2n-1){
+        padding-top:80px ;
+    }
+    .btn_prev2:hover,
+    .btn_next2:hover,
+    .btn_prev3:hover,
+    .btn_next3:hover{
+        color: #FE5D58;
+    }
+
     .train2 li:last-of-type{ margin: 0;}
     .train2 li:nth-of-type(4n){margin:0; } 
     .card{
         width: 250px;
         height: 250px;
     }
+    .card.banner{
+        width: 500px;
+    }
+
     div.station3{
         position: relative;
         display: flex;
         flex-flow: column wrap ;
         height: 700px;
         width: 700px;
+        justify-content: center;
         box-sizing: border-box;
+        overflow: hidden;
     }
     .train3{
         transition: transform 1s ease;
@@ -258,7 +285,11 @@
   letter-spacing: 5px;
 
 }
-    
-    
-
+.dongainfo_popup{
+    width: 100%;
+    height: 50%;
+}
+.close{
+    right: 30px;
+}
 }
