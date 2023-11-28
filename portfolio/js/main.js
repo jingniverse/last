@@ -5,6 +5,7 @@ const icons = document.querySelectorAll('.icon');
 icons.forEach (icon => {  
   icon.addEventListener('click', (event) => {
     icon.classList.toggle("open");
+
   });
 });
 
@@ -13,6 +14,20 @@ icons.forEach (icon => {
  })
  $('.close').click(function(){
   $('.plan_popup').removeClass('on')
+})
+
+let icon_Status = false
+
+$('.icon.nav-icon-5').click(function(){
+  if(icon_Status==false){
+    $('.nav').addClass('on')
+    icon_Status = true
+
+  }else{
+    $('.nav').removeClass('on')
+    icon_Status = false
+  }
+
 })
 
 let btn = $('.btn_next2')
