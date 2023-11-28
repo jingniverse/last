@@ -13,6 +13,7 @@
     }
     .page1 h2{
         font-size: 100px;
+        width: 600px;
         /* margin-bottom: 140px; */
     }
     .page1 p{
@@ -20,9 +21,16 @@
         font-size: 18px;
         padding: 0 10px 8px 5px;
     }
+    .page1 p span{
+        width: 315px;
+    }
+    .page1 p span:nth-of-type(2){
+        width: 225px;
+    }
     /* home end */
     /* about */
     .page2{
+        overflow: hidden;
         align-items: flex-end;
         padding: 100px 0 50px;
     }
@@ -119,6 +127,7 @@
     /* about end*/
     /* 퍼블리싱 */
     .page3{
+        overflow: hidden;
         padding: 0;
     }
     .pb_title h1{
@@ -161,6 +170,7 @@
     .d_popup{
         text-align: center;
         padding: 0;
+        overflow: hidden;
     }
     .des_title{
         font-size: 60px;
@@ -177,42 +187,44 @@
         width: 100px;
         font-size: 15px;
     }
-    div.station2{
-        border: 1px solid;
+     div.station2{
         display: flex;
         flex-flow: row nowrap;
+        height: 700px;
         width: 700px;
-        height: 370px;
-        overflow: hidden;
+        box-sizing: border-box;
     }
     .train2{
-        width: 400%;
         display: flex;
-        flex-flow: row nowrap;
-        justify-content:flex-start;
-        align-items: flex-start;
-        transform: translateX(0%);
+        width: 1400px;
+        flex-flow: column wrap;
+        box-sizing: border-box;
+        transform: translateX(-100%);
     }
+    
+
     .train2>li{
         margin: 0;
-        padding: 33.3px
+        padding: 50px;
        }
+       /*
     .train2 li:nth-of-type(1)
     {
         padding-left:0;
     }
     .train2 li:last-of-type
     {padding-right: 0px;}
+   */
     .train2 li:last-of-type{
         margin: 0;
     }
     .train2 li:nth-of-type(4n)
     {
         margin:0;
-    }
+    } 
     .card{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
 
