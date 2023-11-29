@@ -1,6 +1,6 @@
 body{
-  background:url(../img/background3.png) fixed rgba(0, 0, 0, 0.1);
-  background-blend-mode: color-burn;
+  background:url(../img/background3.png) fixed rgba(255, 255, 255, 0.4);
+  background-blend-mode: screen;
   
 }
 
@@ -26,7 +26,7 @@ body::-webkit-scrollbar-track {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    background: url(../img/background3.png);
+    background: url(../img/background3.png) rgba(255, 255, 255, 0.1);
     align-items: center;
     justify-content: center;
     padding: 5px 10px;
@@ -55,6 +55,9 @@ nav>ul li{
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+}
+nav>ul>li:hover{
+  color: #fe5d58;
 }
 /* 햄버거메뉴  */
 .icon.nav-icon-5{
@@ -181,7 +184,6 @@ width: 350px
   font-size: 15px;
   line-height: 25px;
   font-family: king;
-  font-weight: bold;
 
 }
 
@@ -229,7 +231,6 @@ height: 100%;
     flex-flow: column;
     justify-content: flex-end;
     font-family: king;
-    font-weight: bold;
     font-size: 19px;
 }
 /* 인적사항 */
@@ -344,7 +345,6 @@ height: 100%;
   justify-content: flex-end;
   flex-flow: column;
   font-family: king;
-  font-weight: bold;
   font-size: 15px;
   line-height: 22px;
   padding: 82px 0 40px 50px;
@@ -382,6 +382,7 @@ height: 100%;
   width: 778px;
 }
 .btn_box li{
+  border: 1px solid rgba(0, 0, 0, 0.336);
   text-transform: capitalize;
   width: 160px;
   height: 50px;
@@ -434,6 +435,7 @@ height: 100%;
   margin-bottom: 35px;
 }
 .d_popup>p{
+  line-height:40px ;
   width: 345px;
   font-family: king;
   font-size: 25px;
@@ -462,6 +464,8 @@ color: #FE5D58;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.station2{
 }
 .train2{
   display: flex;
@@ -562,6 +566,7 @@ color: #FE5D58;
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 5px;
   border-radius: 20px;
+  pointer-events: none;
 }
 .card_info p{
   padding: 4px;
@@ -625,6 +630,7 @@ color: #FE5D58;
 }
 
 .character {
+  pointer-events: none;
   width: 100%;
   opacity: 0;
   transition: all 0.5s;
@@ -751,6 +757,8 @@ justify-content: space-around;
 }
 .dongainfo_popup div img{
   width: 100%;
+  min-width: 1300px;
+
 }
 .close{
   position: absolute;

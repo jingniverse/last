@@ -30,6 +30,16 @@ $('.icon.nav-icon-5').click(function(){
 
 })
 
+$('.nav>ul>li>a').click(function(){
+  $('.nav').removeClass('on')
+  $('.icon.nav-icon-5').removeClass('open')
+
+  icon_Status = false
+
+})
+
+
+
 let btn = $('.btn_next2')
 let btn2 = $('.btn_prev2')
 let btn3 = $('.btn_next3')
@@ -42,14 +52,14 @@ let count=0
 btn.click(function(e){
     e.preventDefault()
     count++
-    if(count>2){count=0}
-     train.css('transform','translateX('+(-50*count)+'%)')
+    if(count>3){count=0}
+     train.css('transform','translateX('+(-25*count)+'%)')
 })
 btn2.click(function(e){
   e.preventDefault()
   count--
-  if(count<0){count=2}
-   train.css('transform','translateX('+(-50*count)+'%)')
+  if(count<0){count=3}
+   train.css('transform','translateX('+(-25*count)+'%)')
 })
 
 btn3.click(function(e){
@@ -65,6 +75,28 @@ if(count<0){count=1}
  train2.css('transform','translateX('+(-50*count)+'%)')
 })
 
+$(".train2>li").click(function(){
+    $(".train2>li").removeClass("on")
+    $(this).addClass("on")
+})
+$(".train3>li").click(function(){
+  $(".train3>li").removeClass("on")
+  $(this).addClass("on")
+})
 
+
+//  let pu = false
+// $(".train2>li").click(function(){
+//   if(pu==false){
+//     $(".train2>li").removeClass("on")
+//     $(this).addClass("on")
+//     pu = true
+
+//   }else{
+//     $(".train2>li").removeClass("on")
+//     $(this).addClass("on")
+//     pu = false
+//   }
+//   })
 
 })

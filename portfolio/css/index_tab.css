@@ -166,7 +166,6 @@
     /* 퍼블리싱 끝 */
     /* 디자인 */
     .page4{
-        overflow: hidden;
         padding-top: 100px;
     }
     /* 팝업 */
@@ -174,7 +173,6 @@
     .d_popup{
         text-align: center;
         padding: 0;
-        overflow: hidden;
         margin-bottom: 0;
     }
     .d_banner{
@@ -201,39 +199,43 @@
     .size.pop{margin-bottom: 0;}
 
      div.station2{
-        overflow: hidden;
+        overflow-x: hidden;
         position: relative;
         display: flex;
         flex-flow: row nowrap;
-        height: 800px;
+        height: 450px;
         width: 700px;
         box-sizing: border-box;
+        align-items: center;
     }   
     .train2{
-    transition: transform 1s ease;
+        transition: transform 1s ease;
         display: flex;
-        width: 1400px;
+        width: 400%;
         justify-content: center;
-        flex-flow: column wrap;
+        flex-flow: row nowrap;
         box-sizing: border-box;
     }
     .controler2,.controler3{
         position:absolute;
-        width:95%;
+        height: 0;
+        width:98%;
         left:50%;
-        top:50%;
-        transform:translate(-50%,-50%);
+        top:40%;
+        transform:translate(-50%,0);
         display: flex;
         font-size: 70px;
         transition: 0.5s all ease 0s;
         justify-content: space-between;
+        z-index: 1;
     }
     .train2>li{
-        margin: 0;
-        padding: 50px;
+        z-index: 2;
+        padding: 0;
+        margin: 50px;
        }
     .train2>li:nth-of-type(2n-1){
-        padding-top:80px ;
+        padding-top:0px ;
     }
     .btn_prev2:hover,
     .btn_next2:hover,
@@ -243,7 +245,7 @@
     }
 
     .train2 li:last-of-type{ margin: 0;}
-    .train2 li:nth-of-type(4n){margin:0; } 
+    .train2 li:nth-of-type(4n){margin:50px; } 
     .card{
         width: 250px;
         height: 250px;
@@ -251,6 +253,54 @@
     .card.banner{
         width: 500px;
     }
+.card:hover .wrapper {
+    transform: none;
+}
+    .on .card .wrapper {
+        transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+     }
+     .card:hover
+     .wrapper::after {
+        opacity: 0;
+    }
+    .on .card
+.wrapper::after {
+    opacity: 1;
+}
+.card:hover .wrapper::after {
+    height: 0;
+}
+.on .card .wrapper::after {
+    height: 120px;
+}
+.card:hover .card_info {
+    transform: none;
+    opacity: 0;
+  }
+  .on .card .card_info {
+    transform: translate3d(0%, 0px, 300px);
+    opacity: 1;
+  }
+  .card:hover .character {
+    opacity: 0;
+    transform: none;
+}
+.on .card .character {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+}
+  .banner.card:hover .character {
+    transform: none;
+    border: none;
+}
+  .on .banner.card .character {
+    border: 3px solid silver;
+    transform: translate3d(0%, -50%, 100px);
+  
+  }
+
+  
+
 
     div.station3{
         position: relative;
@@ -281,6 +331,8 @@
     .e-mail{
         font-size: 40px;
     }
+ 
+
 .page5 p{
   letter-spacing: 5px;
 
