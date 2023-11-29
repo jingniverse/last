@@ -1,3 +1,7 @@
+html{
+  scroll-behavior:smooth
+  
+}
 body{
   background:url(../img/background3.png) fixed rgba(255, 255, 255, 0.4);
   background-blend-mode: screen;
@@ -723,6 +727,9 @@ justify-content: space-around;
 .page5 p{
   width: 100%;
   letter-spacing: 10px;
+}
+.page5 p br{
+  display: none;
 }
 /* 플랜 팝업창 */
 .plan_popup{

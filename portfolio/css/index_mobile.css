@@ -10,7 +10,7 @@
         background: #d9d9d979;
         justify-content: space-between;
         backdrop-filter: blur(2px);
-        height: 50px;
+        height: 40px;
     }
     .logo{
         width: 40px;
@@ -130,11 +130,11 @@
 .my_info>ul{
     padding: 10px 0;
     display: flex;
-    flex-flow: wrap;
+    flex-flow: column;
     justify-content: space-between;
 }
 .my_info_1{
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .my_info_1 li{
     padding: 5px;
@@ -145,10 +145,7 @@
 }
 .my_info>ul li:nth-of-type(3){
     width: 100%;
-}
-.my_info>ul li:nth-of-type(3) p{
     justify-content: center;
-    align-items: center;
 }
 .my_info ul li p:nth-of-type(1){
     display: none;
@@ -163,15 +160,18 @@
     width: 100%;
 }
 .my_info .my_info_1 li:nth-of-type(4) p:nth-of-type(2){
-    flex-flow: row;
+    flex-flow: column;
     width: 100%;
     justify-content: space-between;
 }
 .my_info .my_info_1 li:nth-of-type(4) p:nth-of-type(2) span{
-    display: block;
+    padding: 3px 0;
 }
 .my_info_1 span:nth-of-type(1){
     margin-bottom: 0;
+}
+.my_info_2{
+    margin-bottom: 20px;
 }
 .my_info_2 span:nth-of-type(even){
     font-size: 13px;
@@ -211,7 +211,7 @@
 /* publishing */
 .page3{
     height: 100%;
-    padding:20px 10px;
+    padding:60px 10px 20px;
     width: 100%;
 }
 .pb_title{
@@ -248,9 +248,12 @@
     padding: 0;
     align-items: center;
     text-align: center;
-    font-size: 12px;
+    font-size: 4vmin;
+    line-height: 5vw;
 }
 .pb_content .pb_text p{
+    min-width: 260px;
+    max-width: 570px;
     width: 100%;
 }
 .pb_content .pb_text br{
@@ -286,7 +289,7 @@
 /* publishing end */
 /* design */
 .page4{
-    padding-bottom: 30px;
+    padding: 60px 0 30px;
 }
 .d_popup{
     padding: 0 10px;
@@ -301,6 +304,7 @@
     width: 100%;
     font-size: 15px;
     text-align: center;
+    line-height: 25px;
     margin-bottom: 15px;
 }
 .pu_title{
@@ -316,7 +320,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-
+    overflow: hidden;
 }
 .train2{
     width: 400%;
@@ -421,6 +425,7 @@
 
 }
 .train3{
+    transition: 1s all;
     width: 200%;
     height: 100%;
     justify-content: flex-start;
@@ -431,7 +436,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:70px 0 50px;
+    padding:70px 10px 50px;
 }
 .train3 li:nth-of-type(2n){
     margin: 0;
@@ -459,8 +464,13 @@
 }
 
 .page5 p{
-letter-spacing: 5px;
-
+    font-size:3vw;
+letter-spacing: 10px;
+text-align: center;
+line-height: 3vw;
+}
+.page5 p br{
+    display: block;
 }
 .dongainfo_popup{
 width: 100%;
