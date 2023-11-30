@@ -270,7 +270,7 @@
     text-align: left;
 }
 .pb_text ul li span:nth-of-type(1){
-    font-size: 15px;
+    font-size: 4.5vmin;
     margin: 10px;
 }
 .btn_box{
