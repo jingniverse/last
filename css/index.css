@@ -3,7 +3,7 @@ html{
   
 }
 body{
-  background:url(../img/background3.jpg) fixed rgba(255, 255, 255, 0.4);
+  background:url(../img/background3.jpg) fixed rgba(255, 255, 255, 0.4) no-repeat;
   background-blend-mode: screen;
   
 }
@@ -76,7 +76,7 @@ nav>ul>li:hover{
     display: inline-block;
   }
   .nav-icon-5 span{
-    background-color:red;
+    background-color:#fe5d58;
     position: absolute;
     border-radius: 2px;
     transition: .3s cubic-bezier(.8, .5, .2, 1.4);
