@@ -1,5 +1,9 @@
 @media (min-width:769px) and (max-width:1024px){
-    
+    body{
+        background:url(../img/background3.jpg) fixed rgba(255, 255, 255, 0.4) ;
+        background-blend-mode: screen;
+        background-attachment:fixed
+      }
     .header{
         width: 550px;
     }
