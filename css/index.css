@@ -3,7 +3,7 @@ html{
   
 }
 body{
-  background:url(../img/background3.jpg) fixed rgba(255, 255, 255, 0.4);
+  background:url(../img/background3.jpg) fill rgba(255, 255, 255, 0.4);
   background-blend-mode: screen;
   
 }
