@@ -3,7 +3,7 @@ html{
   
 }
 body{
-  background:url(../img/background3.png) fixed rgba(255, 255, 255, 0.4);
+  background:url(../img/background3.jpg) fixed rgba(255, 255, 255, 0.4);
   background-blend-mode: screen;
   
 }
@@ -291,6 +291,28 @@ height: 100%;
   width: 60px;
   height: 60px;
 }
+.skill>li:nth-of-type(1) img{
+  animation: updown 1.3s ease infinite 1s alternate;
+}
+.skill>li:nth-of-type(2) img{
+  animation: updown 1.3s ease infinite 1.2s alternate;
+}
+.skill>li:nth-of-type(3) img{
+  animation: updown 1.3s ease infinite 1.4s alternate;
+}
+.skill>li:nth-of-type(4) img{
+  animation: updown 1.3s ease infinite 1.6s alternate;
+}
+.skill>li:nth-of-type(5) img{
+  animation: updown 1.3s ease infinite 1.8s alternate;
+}
+.skill>li:nth-of-type(6) img{
+  animation: updown 1.3s ease infinite 2s alternate;
+}
+.skill>li:nth-of-type(7) img{
+  animation: updown 1.3s ease infinite 2.2s alternate;
+}
+
 /* 인포스킬 끝 */
 /* 퍼블리싱 */
 .page3{
@@ -785,4 +807,9 @@ justify-content: space-around;
   background: #00ACCD;
   border: white;
   cursor: pointer;
+}
+
+@keyframes updown {
+  0% {transform:translateY(0px)}
+  100% {transform:translateY(-8px)}
 }
