@@ -3,9 +3,10 @@ html{
   
 }
 body{
-  background:url(../img/background3.jpg) fixed rgba(255, 255, 255, 0.4) ;
+  background:url(../img/background3.jpg) fixed rgba(255, 255, 255, 0.4) no-repeat;
   background-blend-mode: screen;
-  background-attachment:fixed
+  background-attachment:fixed;
+  background-size: cover;
 }
 
 /* 헤더 */
