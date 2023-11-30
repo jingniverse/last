@@ -1,4 +1,9 @@
 @media (max-width:768px) {
+    body{
+        background:url(../img/background3.jpg) fixed rgba(255, 255, 255, 0.4);
+        background-blend-mode: screen;
+        
+      }
     /* 헤더 */
     .header{
         padding: 10px 20px;
@@ -86,6 +91,7 @@
     }
     .page1 p span:nth-of-type(2){
         width: 100%;
+        text-align: right;
     }
   /* home end */
 /* about */
