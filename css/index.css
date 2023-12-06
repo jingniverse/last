@@ -452,16 +452,20 @@ height: 100%;
 }
 .d_popup{
   width: 100%;
-  padding: 110px 0 0;
+  padding: 110px  0;
+  margin: 0 auto;
   box-sizing: border-box;
   margin-bottom: 200px;
+  max-width: 1370px;
 }
+
 .des_title{
   text-transform: capitalize;
   font-family: caveat;
   font-size: 85px;
   font-weight: bold;
   margin-bottom: 35px;
+  padding-left:20px;
 }
 .dt_info{
   line-height:40px ;
@@ -469,6 +473,7 @@ height: 100%;
   font-family: king;
   font-size: 25px;
   margin-bottom: 40px;
+  padding-left:20px;  
 }
 .des_title i{
 color: #FE5D58;

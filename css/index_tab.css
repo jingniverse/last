@@ -184,9 +184,11 @@
     }
     .des_title{
         font-size: 60px;
+        padding-left: 0;
     }
     .dt_info{
-        font-size: 15px;
+        font-size: 18px;
+        padding-left: 0;
         text-align: center;
         width: 100%;
         line-height: 25px;
